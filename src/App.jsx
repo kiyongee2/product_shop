@@ -31,6 +31,7 @@ function App() {
   return (
     <>
       <div>
+        {/* basename -> 라우터의 기본 경로 설정, 배포 시 경로에 맞게 수정 필요 */}
         <BrowserRouter basename="/product_shop/">
           <Header isLoggedIn={isLoggedIn} userId={userId} onLogout={handleLogout} />
           {/* <Main /> */}

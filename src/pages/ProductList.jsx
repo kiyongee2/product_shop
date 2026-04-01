@@ -17,10 +17,12 @@ const ProductList = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {products.map((product) => (
+                    {products.map(product => (
                         <tr key={product.id}>
                             <td>{product.id}</td>
-                            <td>{product.name}</td>
+                            <td>
+                                <Link to={`/products/${product.id}`}>{product.name}</Link>
+                            </td>
                             <td>{product.price}</td>
                             <td>{product.description}</td>
                         </tr>
